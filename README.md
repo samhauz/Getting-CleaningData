@@ -21,25 +21,23 @@ The Code
 ====================
 The code for performing the tasts reads as below. It is also stored under .../Getting-CleaningData/run_analysis.R
 
-<p>
-
+```
 #Working Directory inder "UCI HAR DataSet".
+#Merges the TRAINING and TEST data sets to create one DATA SET.
 
-#1. Merges the TRAINING and TEST data sets to create one DATA SET.
+trainDat <- read.table("train/X_train.txt")
+testDat <- read.table("test/X_test.txt")
+ConTrainTest <- rbind(trainDat, testDat)
 
-#trainDat <- read.table("train/X_train.txt")
-#testDat <- read.table("test/X_test.txt")
-#ConTrainTest <- rbind(trainDat, testDat)
-
-#trainDat <- read.table("train/subject_train.txt")
-#testDat <- read.table("test/subject_test.txt")
+trainDat <- read.table("train/subject_train.txt")
+testDat <- read.table("test/subject_test.txt")
 ConTrainTest2 <- rbind(trainDat, testDat)
 
 trainDat <- read.table("train/y_train.txt")
 testDat <- read.table("test/y_test.txt")
 ConTrainTest3 <- rbind(trainDat, testDat)
 
-Task 2. Extracts only the measurements on the MEAN and STANDARD DEVIATION for each measurement.
+# 2. Extracts only the measurements on the MEAN and STANDARD DEVIATION for each measurement.
 
 FEATURE <- read.table("features.txt")
 GOOD_FEATURE <- grep("-mean\\(\\)|-std\\(\\)", FEATURE[, 2])
@@ -48,20 +46,20 @@ names(ConTrainTest) <- FEATURE[GOOD_FEATURE, 2]
 names(ConTrainTest) <- gsub("\\(|\\)", "", names(ConTrainTest))
 names(ConTrainTest) <- tolower(names(ConTrainTest)) 
 
-Task 3. Uses descriptive activity names to name the activities in the data set
+# 3. Uses descriptive activity names to name the activities in the data set
 
 ACTIVITIES <- read.table("activity_labels.txt")
 ACTIVITIES[, 2] = gsub("_", "", tolower(as.character(ACTIVITIES[, 2])))
 ConTrainTest3[,1] = ACTIVITIES[ConTrainTest3[,1], 2]
 names(ConTrainTest3) <- "activity"
 
-Task 4. Appropriately labels the data set with descriptive activity names.
+# 4. Appropriately labels the data set with descriptive activity names.
 
 names(ConTrainTest2) <- "subject"
 CLEANED <- cbind(ConTrainTest2, ConTrainTest3, ConTrainTest)
 write.table(CLEANED, "MERGED_CLEANED_DATA.txt")
 
-Task 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+# 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 UNIQUESub = unique(ConTrainTest2)[,1]
 NUMSub = length(unique(ConTrainTest2)[,1])
@@ -88,3 +86,4 @@ write.table(fRes, "CleanedData.txt")
 </p>
 
 
+```
