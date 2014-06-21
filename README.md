@@ -19,6 +19,6 @@ The resulting cleaned dataset is stored as CleanedData.txt.
 
 The Code
 ====================
-The code for performing the tast is stored under .../Getting-CleaningData/run_analysis.R
+The code for performing the tasts is stored under .../Getting-CleaningData/run_analysis.R
 
 
