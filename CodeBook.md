@@ -3,7 +3,7 @@ Code Book
 
 This codebood describes the variables, the data, and any transformations or work that you performed to clean up the data for this project.
 
-<h3> The data set for this project was obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+The data set for this project was obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 <h3> Variables </h3>
 
