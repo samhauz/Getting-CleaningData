@@ -22,8 +22,8 @@ The Code
 The code for performing the tasts reads as below. It is also stored under .../Getting-CleaningData/run_analysis.R
 
 ```
-#Working Directory inder "UCI HAR DataSet".
-#Merges the TRAINING and TEST data sets to create one DATA SET.
+#Working Directory located under "UCI HAR DataSet".
+# 1. Merges the TRAINING and TEST data sets to create one DATA SET.
 
 trainDat <- read.table("train/X_train.txt")
 testDat <- read.table("test/X_test.txt")
