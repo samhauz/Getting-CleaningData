@@ -14,7 +14,7 @@ The code run_Analysis.R assumed that the working dorectory is located under /UCI
 
 Cleaned Data
 ====================
-The resulting cleaned dataset is stored as CleanedData.txt. 
+The resulting cleaned dataset is stored as CleanedData.txt. This cleaned data has 180 observations and 68 variables.
 
 
 The Code
