@@ -1,4 +1,4 @@
-# Working Directory located under "UCI HAR DataSet"
+# Working Directory set under "UCI HAR DataSet"
 
 # 1. Merges the TRAINING and TEST data sets to create one DATA SET.
 
