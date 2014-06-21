@@ -27,7 +27,7 @@ The code for performing the tasts reads as below. It is also stored under .../Ge
 
 #1. Merges the TRAINING and TEST data sets to create one DATA SET.
 
-trainDat <- read.table("train/X_train.txt")
+#trainDat <- read.table("train/X_train.txt")
 testDat <- read.table("test/X_test.txt")
 ConTrainTest <- rbind(trainDat, testDat)
 
