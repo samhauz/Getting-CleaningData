@@ -13,5 +13,7 @@ This is to:
 The code run_Analysis.R assumed that the working dorectory is located under /UCI HAR Dataset. 
 
 Cleaned Data
+====================
+The resulting cleaned dataset is stored as CleanedData.txt. 
 
-The resulting clean dataset is in this repository at: data/cleaned.txt. It contains one row for each subject/activity pair and columns for subject, activity, and each feature that was a mean or standard deviation from the original dataset.
+
