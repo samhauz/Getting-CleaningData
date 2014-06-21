@@ -29,6 +29,3 @@ This data set come from the research conducted by Jorge L. Reyes-Ortiz, Davide A
 * Number of attributes: 561
 * Associated Tasks: Classification, Clustering
 * Missing value: N/A
-
-
-
