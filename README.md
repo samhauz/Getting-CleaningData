@@ -21,8 +21,11 @@ The Code
 ====================
 The code for performing the tasts reads as below. It is also stored under .../Getting-CleaningData/run_analysis.R
 
-NB: Working Directory inder "UCI HAR DataSet"
-Tast 1. Merges the TRAINING and TEST data sets to create one DATA SET.
+<p>
+
+#Working Directory inder "UCI HAR DataSet".
+
+#1. Merges the TRAINING and TEST data sets to create one DATA SET.
 
 trainDat <- read.table("train/X_train.txt")
 testDat <- read.table("test/X_test.txt")
@@ -82,5 +85,6 @@ for (ConTrainTest2 in 1:NUMSub)
 
 write.table(fRes, "CleanedData.txt")
 
+</p>
 
 
